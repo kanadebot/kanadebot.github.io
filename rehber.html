@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rehber · Kanade</title>
+<meta name="description" content="Kanade, Spotify&#x27;da dinlediğin şarkıları koleksiyon kartlarına dönüştüren Türkçe Discord oyunu. Dinle, kutu aç, koleksiyonunu göster.">
+<meta name="theme-color" content="#140F26">
+<meta property="og:title" content="Rehber · Kanade">
+<meta property="og:description" content="Kanade, Spotify&#x27;da dinlediğin şarkıları koleksiyon kartlarına dönüştüren Türkçe Discord oyunu. Dinle, kutu aç, koleksiyonunu göster.">
+<meta property="og:url" content="https://kanadebot.github.io/rehber.html">
+<meta property="og:image" content="https://kanadebot.github.io/media/banner.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="canonical" href="https://kanadebot.github.io/rehber.html">
+<link rel="alternate" hreflang="tr" href="https://kanadebot.github.io/rehber.html">
+<link rel="alternate" hreflang="en" href="https://kanadebot.github.io/en/guide.html">
+<link rel="preload" href="fonts/NotoSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="page-guide">
+<a class="skip" href="#main">İçeriğe geç</a>
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="index.html"><img src="media/logo.png" alt="" width="34" height="34">Kanade</a>
+    <nav class="mainnav" aria-label="Site menüsü">
+    <a href="index.html">Ana sayfa</a>
+    <a href="ozellikler.html">Özellikler</a>
+    <a href="komutlar.html">Komutlar</a>
+    <a href="rehber.html" aria-current="page">Rehber</a>
+    <a href="sss.html">SSS</a>
+    <a href="guncellemeler.html">Güncellemeler</a>
+    </nav>
+    <a class="lang" href="en/guide.html" hreflang="en" lang="en">English</a>
+  </div>
+</header>
+<main id="main">
+<div class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">Rehber</p>
+    <h1><img class="emoji" src="media/emoji/k_rehber.png" alt="📖"> Rehber: nasıl oynanır?</h1>
+    <p class="intro">Nasıl oynanır ve terimler: Plak, Parça, kademe, set, seri, pity.</p>
+  </div>
+</div>
+<div class="wrap guide">
+  <section>
+    <h2>Adım adım</h2>
+    <ol class="how">
+      <li><strong>1. Dinle:</strong> Spotify'da dinlediğin (en az 30 sn) her şarkı <strong>3 Plak</strong> (günde en fazla 30 şarkı). Dinlenen şarkılar sunucunun havuzuna girer ve karta dönüşür.</li>
+      <li><strong>2. Kutu aç:</strong> <code>/kutu</code> = 100 Plak. Kademe oranları her zaman <code>/oranlar</code>'da. Kart; ~%25 senin bu sunucuda dinlediğin henüz sahip olmadığın şarkılardan, ~%50 sunucu havuzundan, ~%25 diğer sunuculardan seçilir.</li>
+      <li><strong>3. Topla:</strong> Kopya kartlar Parça'ya dönüşür; Parça ile eksik kartını <code>/kart üret</code> ile üretirsin. İstemediğin kartı <code>/kart parçala</code> ile Parça'ya çevirebilirsin.</li>
+      <li><strong>4. Her gün:</strong> <code>/günlük</code> ödülü + 3 görev; üçü de bitince 1 bedava kutu.</li>
+    </ol>
+  </section>
+  <section>
+    <h2>Terimler</h2>
+    <div class="terms">
+    <div class="term" id="plak">
+      <h3><img class="emoji" src="media/emoji/k_plak.png" alt="💿"> Plak</h3>
+      <p>Oyun parası. Dinleyerek (3/şarkı), <code>/günlük</code> (100+) ve görevlerden kazanılır; kutu açar (100 Plak).</p>
+    </div>
+    <div class="term" id="shards">
+      <h3><img class="emoji" src="media/emoji/k_parca.png" alt="🧩"> Parça</h3>
+      <p>Her kutudan +3; kopya karttan Yaygın 5 · Nadir 15 · Epik 50 · Efsanevi 150. Kart üretir: 30 / 90 / 300 / 900.</p>
+    </div>
+    <div class="term" id="tier">
+      <h3><img class="emoji" src="media/emoji/k_yaygin.png" alt="⚪"><img class="emoji" src="media/emoji/k_nadir.png" alt="🔵"><img class="emoji" src="media/emoji/k_epik.png" alt="🟣"><img class="emoji" src="media/emoji/k_efsanevi.png" alt="🟡"> Kademe</h3>
+      <p>Yaygın, Nadir, Epik, Efsanevi. Kart basıldığı andaki kademesini hep korur.</p>
+    </div>
+    <div class="term" id="edition">
+      <h3>#️⃣ Basım no</h3>
+      <p>O şarkıdan kaçıncı kartın sende olduğu (#1 = ilk basım). Numaralar hiç yeniden kullanılmaz.</p>
+    </div>
+    <div class="term" id="set">
+      <h3><img class="emoji" src="media/emoji/k_set.png" alt="💽"> Set</h3>
+      <p>Katalogda aynı albümden en az 3 şarkı. Hepsini toplayınca şarkı başına 30 Plak; <code>/setler</code>.</p>
+    </div>
+    <div class="term" id="streak">
+      <h3><img class="emoji" src="media/emoji/k_seri.png" alt="🔥"> Seri</h3>
+      <p><code>/günlük</code>'ü art arda almak. Her gün +10 Plak artar; her 7 günde Epik+ garantili kutu.</p>
+    </div>
+    <div class="term" id="pity">
+      <h3>🎯 Pity (garanti)</h3>
+      <p>Şanssızlık koruması: üst üste 10 kutuda Epik+, 45 kutuda Efsanevi kesin çıkar.</p>
+    </div>
+    <div class="term" id="pool">
+      <h3><img class="emoji" src="media/emoji/k_kutu.png" alt="📦"> Havuz (kendi / sunucu / genel)</h3>
+      <p>Kutudaki kartın seçildiği yer: ~%25 <strong>kendi</strong> (bu sunucuda dinlediğin, henüz sahip olmadığın şarkılar), ~%50 <strong>sunucu</strong> (bu sunucuda dinlenenler), ~%25 <strong>genel</strong> (diğer sunucular). Kendi havuzun küçükken payı sunucuya, sunucu havuzu küçükken payı genele kayar.</p>
+    </div>
+    <div class="term" id="spotify">
+      <h3><img class="emoji" src="media/emoji/k_dinle.png" alt="🎧"> Spotify neden gerekli?</h3>
+      <p>Bot yalnızca Discord'daki "dinliyor" durumunu görür. Görünmezse Plak kazanamazsın ve havuz büyümez: Ayarlar → Bağlantılar → Spotify → "Durum olarak göster".</p>
+    </div>
+    </div>
+    <p class="note">Sayılar oyun dengesine göre değişebilir; güncel oranlar /oranlar'da.</p>
+  </section>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <nav>
+      <a href="gizlilik.html">Gizlilik Politikası</a>
+      <a href="kosullar.html">Kullanım Koşulları</a>
+      <a href="https://top.gg/bot/1452711910930907346">top.gg</a>
+      <a href="https://discord.gg/R9tBdnKaH6">Destek Sunucusu</a>
+    </nav>
+    <span>Kanade, Discord veya Spotify ile bağlantılı değildir.</span>
+  </div>
+</footer>
+</body>
+</html>

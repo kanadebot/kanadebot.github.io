@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sıkça Sorulan Sorular · Kanade</title>
+<meta name="description" content="Kanade, Spotify&#x27;da dinlediğin şarkıları koleksiyon kartlarına dönüştüren Türkçe Discord oyunu. Dinle, kutu aç, koleksiyonunu göster.">
+<meta name="theme-color" content="#140F26">
+<meta property="og:title" content="Sıkça Sorulan Sorular · Kanade">
+<meta property="og:description" content="Kanade, Spotify&#x27;da dinlediğin şarkıları koleksiyon kartlarına dönüştüren Türkçe Discord oyunu. Dinle, kutu aç, koleksiyonunu göster.">
+<meta property="og:url" content="https://kanadebot.github.io/sss.html">
+<meta property="og:image" content="https://kanadebot.github.io/media/banner.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="canonical" href="https://kanadebot.github.io/sss.html">
+<link rel="alternate" hreflang="tr" href="https://kanadebot.github.io/sss.html">
+<link rel="alternate" hreflang="en" href="https://kanadebot.github.io/en/faq.html">
+<link rel="preload" href="fonts/NotoSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="page-faq">
+<a class="skip" href="#main">İçeriğe geç</a>
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="index.html"><img src="media/logo.png" alt="" width="34" height="34">Kanade</a>
+    <nav class="mainnav" aria-label="Site menüsü">
+    <a href="index.html">Ana sayfa</a>
+    <a href="ozellikler.html">Özellikler</a>
+    <a href="komutlar.html">Komutlar</a>
+    <a href="rehber.html">Rehber</a>
+    <a href="sss.html" aria-current="page">SSS</a>
+    <a href="guncellemeler.html">Güncellemeler</a>
+    </nav>
+    <a class="lang" href="en/faq.html" hreflang="en" lang="en">English</a>
+  </div>
+</header>
+<main id="main">
+<div class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">SSS</p>
+    <h1>Sıkça sorulan sorular</h1>
+    <p class="intro">Cevabını bulamadığın bir şey olursa <a href="https://discord.gg/R9tBdnKaH6">destek sunucusunda</a> sorabilirsin.</p>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="faq">
+    <details id="premium" open>
+      <summary>Spotify Premium gerekir mi?</summary>
+      <div class="answer">
+        <p>Hayır. Ücretsiz Spotify hesabı da olur. Gereken tek şey Discord'un senin ne dinlediğini göstermesi: Discord'da <b>Ayarlar → Bağlantılar → Spotify</b>'ı bağla ve <b>"Spotify'ı durumum olarak göster"</b> açık olsun. Telefonda da aynı ayar: Profil → Bağlantılar.</p>
+      </div>
+    </details>
+
+    <details id="sayilmadi">
+      <summary>Dinlemem neden sayılmadı?</summary>
+      <div class="answer">
+        <p>Sırayla şunlara bak:</p>
+        <ol>
+          <li><b>Oyuna katıldın mı?</b> Dinlemeler yalnızca <code>/başla</code>'da <b>Katıl</b>'a bastıktan sonra sayılır.</li>
+          <li><b>Spotify durumun görünüyor mu?</b> Profilinde "Spotify dinliyor" yazmalı. Discord durumun <b>Görünmez</b> ise bot da göremez.</li>
+          <li><b>Takip açık mı?</b> <code>/gizlilik durum</code> ile bak; kapattıysan <code>/gizlilik takibi-aç</code>. Sunucu yöneticileri de takibi sunucu genelinde kapatmış olabilir (<code>/ayarlar takip</code>).</li>
+          <li><b>En az 30 saniye dinledin mi?</b> Daha kısa dinlemeler ödül vermez.</li>
+          <li><b>Sınıra mı takıldın?</b> Saatte en fazla 15, günde en fazla 30 şarkı Plak verir; aynı şarkı günde en fazla 2 kez sayılır.</li>
+          <li><b>Discord hesabın yeni mi?</b> 7 günden genç hesaplar dinleme ödülü almaz.</li>
+        </ol>
+      </div>
+    </details>
+
+    <details id="ekleme">
+      <summary>Botu sunucuma nasıl eklerim?</summary>
+      <div class="answer">
+        <p>Bu sitedeki <b>Discord'a Ekle</b> düğmesine bas ve sunucunu seç. Bot eklemek için o sunucuda <b>Sunucuyu Yönet</b> yetkin olmalı (Discord'un kuralı). Kanade yönetici yetkisi istemez; yalnızca kanalları görme, mesaj gönderme, alt başlıklarda mesaj gönderme, bağlantı yerleştirme ve dosya ekleme.</p>
+        <p>Ekledikten sonra üyelerin <code>/başla</code> yazması yeterli.</p>
+      </div>
+    </details>
+
+    <details id="silme">
+      <summary>Verimi nasıl silerim?</summary>
+      <div class="answer">
+        <p><code>/gizlilik verilerimi-sil</code> yaz ve onayla. Kartların, Plak'ın, ilerlemen ve dinleme özetlerin kalıcı olarak silinir; şifreli yedeklerden de en geç 30 gün içinde silinir.</p>
+        <p>Silmeden önce neyin tutulduğunu <code>/gizlilik durum</code> ile görebilirsin. Ayrıntılar <a href="gizlilik.html">Gizlilik Politikası</a>'nda.</p>
+      </div>
+    </details>
+
+    <details id="takip">
+      <summary>Dinlemelerimin takip edilmesini nasıl durdururum?</summary>
+      <div class="answer">
+        <p><code>/gizlilik takibi-kapat</code> takibi tüm sunucularda kapatır: dinlediğin şarkılar hiçbir havuza eklenmez ve dinleme ödülü almazsın. Kartların, Plak'ın, kutuların ve görevlerin aynen devam eder. İstediğin zaman <code>/gizlilik takibi-aç</code> ile geri açarsın.</p>
+        <p>Sunucu yöneticileri <code>/ayarlar takip</code> ile takibi o sunucunun tamamı için kapatabilir.</p>
+      </div>
+    </details>
+
+    <details id="kartlar">
+      <summary>Kutudan hangi şarkılar çıkıyor?</summary>
+      <div class="answer">
+        <p>Yaklaşık %25'i senin bu sunucuda dinlediğin ve henüz sahip olmadığın şarkılardan, %50'si sunucunun havuzundan, %25'i diğer sunuculardan. Yeni bir sunucuda havuz küçükken kartların çoğu genel havuzdan gelir; sunucuda dinlendikçe kendi şarkılarınız artar. Ayrıntı için <a href="rehber.html#pool">Rehber</a>.</p>
+      </div>
+    </details>
+
+    <details id="ucret">
+      <summary>Ücretli mi?</summary>
+      <div class="answer">
+        <p>Hayır, Kanade ücretsiz. Plak, Parça ve kartlar yalnızca oyun içindir; satın alınamaz ve gerçek para değeri yoktur.</p>
+      </div>
+    </details>
+
+    <details id="dil">
+      <summary>Bot hangi dilde konuşur?</summary>
+      <div class="answer">
+        <p>Türkçe ve İngilizce. Bot mesajlarının dili sunucu ayarıdır: yöneticiler <code>/ayarlar dil</code> ile değiştirir. Komut adları ve açıklamaları Discord'un diline göre Türkçe ya da İngilizce görünür.</p>
+      </div>
+    </details>
+  </div>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <nav>
+      <a href="gizlilik.html">Gizlilik Politikası</a>
+      <a href="kosullar.html">Kullanım Koşulları</a>
+      <a href="https://top.gg/bot/1452711910930907346">top.gg</a>
+      <a href="https://discord.gg/R9tBdnKaH6">Destek Sunucusu</a>
+    </nav>
+    <span>Kanade, Discord veya Spotify ile bağlantılı değildir.</span>
+  </div>
+</footer>
+</body>
+</html>

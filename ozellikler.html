@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Özellikler · Kanade</title>
+<meta name="description" content="Kanade, Spotify&#x27;da dinlediğin şarkıları koleksiyon kartlarına dönüştüren Türkçe Discord oyunu. Dinle, kutu aç, koleksiyonunu göster.">
+<meta name="theme-color" content="#140F26">
+<meta property="og:title" content="Özellikler · Kanade">
+<meta property="og:description" content="Kanade, Spotify&#x27;da dinlediğin şarkıları koleksiyon kartlarına dönüştüren Türkçe Discord oyunu. Dinle, kutu aç, koleksiyonunu göster.">
+<meta property="og:url" content="https://kanadebot.github.io/ozellikler.html">
+<meta property="og:image" content="https://kanadebot.github.io/media/banner.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="canonical" href="https://kanadebot.github.io/ozellikler.html">
+<link rel="alternate" hreflang="tr" href="https://kanadebot.github.io/ozellikler.html">
+<link rel="alternate" hreflang="en" href="https://kanadebot.github.io/en/features.html">
+<link rel="preload" href="fonts/NotoSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="page-features">
+<a class="skip" href="#main">İçeriğe geç</a>
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="index.html"><img src="media/logo.png" alt="" width="34" height="34">Kanade</a>
+    <nav class="mainnav" aria-label="Site menüsü">
+    <a href="index.html">Ana sayfa</a>
+    <a href="ozellikler.html" aria-current="page">Özellikler</a>
+    <a href="komutlar.html">Komutlar</a>
+    <a href="rehber.html">Rehber</a>
+    <a href="sss.html">SSS</a>
+    <a href="guncellemeler.html">Güncellemeler</a>
+    </nav>
+    <a class="lang" href="en/features.html" hreflang="en" lang="en">English</a>
+  </div>
+</header>
+<main id="main">
+<div class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">Özellikler</p>
+    <h1>Müzik zevkin, kart kart</h1>
+    <p class="intro">Her kart bir şarkıdır ve görseli bot tarafından o an çizilir. Aşağıdaki örneklerde albüm kapakları yerine renkli yer tutucular var.</p>
+    <nav class="chips" aria-label="Bu sayfada">
+      <a href="#kartlar"><img class="emoji" src="media/emoji/k_kart.png" alt="">Kartlar ve kademeler</a>
+      <a href="#setler"><img class="emoji" src="media/emoji/k_set.png" alt="">Setler ve vitrin</a>
+      <a href="#profil"><img class="emoji" src="media/emoji/k_goster.png" alt="">Profil kartı</a>
+      <a href="#kendi"><img class="emoji" src="media/emoji/k_dinle.png" alt="">Kendi dinlediklerin</a>
+      <a href="#rastgele"><img class="emoji" src="media/emoji/k_nota.png" alt="">/rastgele</a>
+      <a href="#uretim"><img class="emoji" src="media/emoji/k_parca.png" alt="">Parçalama ve üretim</a>
+    </nav>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="feature wide" id="kartlar">
+    <div class="feature-text">
+      <span class="tag"><img class="emoji" src="media/emoji/k_kart.png" alt="">Kartlar ve kademeler</span>
+      <h2>Her şarkı bir kart</h2>
+      <p>Kutudan çıkan her kart bir şarkıdır: kapak, şarkı adı, sanatçı ve albüm. Kartın kademesi basıldığı anda belirlenir ve hiç değişmez.</p>
+      <ul>
+        <li><b>Basım no:</b> o şarkıdan kaçıncı kartın sende olduğu. #1 ilk basımdır; ilk 10 basım "Erken Basım" olarak işaretlenir. Numaralar hiç yeniden kullanılmaz.</li>
+        <li><b>Keşfeden:</b> şarkıyı sunucuda ilk dinleyen oyuncu kartında görünür.</li>
+        <li><code>/kart göster</code> kartını sohbette görsel olarak paylaşır, <code>/kart bilgi</code> basım, kademe ve set bilgisini verir.</li>
+      </ul>
+    </div>
+    <div class="cards-row">
+      <img src="media/ornek_kart_common.png" alt="Örnek Yaygın kart, basım #128" width="360" height="504" loading="lazy">
+      <img src="media/ornek_kart_rare.png" alt="Örnek Nadir kart, basım #41" width="360" height="504" loading="lazy">
+      <img src="media/ornek_kart_epic.png" alt="Örnek Epik kart, basım #12" width="360" height="504" loading="lazy">
+      <img src="media/ornek_kart_legendary.png" alt="Örnek Efsanevi kart, basım #3, Erken Basım" width="360" height="504" loading="lazy">
+    </div>
+  </div>
+
+  <div class="feature flip">
+    <div class="feature-text">
+      <span class="tag"><img class="emoji" src="media/emoji/k_yildiz.png" alt="">Kademeler</span>
+      <h2>Dört kademe, açık oranlar</h2>
+      <p>Her kutudan Yaygın, Nadir, Epik ya da Efsanevi bir kart çıkar. Oranlar ve sana özel sayaçlar <code>/oranlar</code>'da her zaman yazar.</p>
+      <p><b>Pity (garanti):</b> şanssızlık sonsuza kadar sürmez. Üst üste 10 kutuda Epik veya üstü, 45 kutuda Efsanevi kesin çıkar.</p>
+      <p>Yeni oyuncunun ilk kutusu en az Nadir; <code>/günlük</code> serisinin her 7. gününde Epik+ garantili bir kutu gelir.</p>
+    </div>
+    <div class="tiers">
+      <div class="tier t-common"><img src="media/emoji/k_yaygin.png" alt="" width="48" height="48"><b>Yaygın</b><span>%62</span></div>
+      <div class="tier t-rare"><img src="media/emoji/k_nadir.png" alt="" width="48" height="48"><b>Nadir</b><span>%27</span></div>
+      <div class="tier t-epic"><img src="media/emoji/k_epik.png" alt="" width="48" height="48"><b>Epik</b><span>%9</span></div>
+      <div class="tier t-legendary"><img src="media/emoji/k_efsanevi.png" alt="" width="48" height="48"><b>Efsanevi</b><span>%2</span></div>
+    </div>
+  </div>
+
+  <div class="feature" id="setler">
+    <div class="feature-text">
+      <span class="tag"><img class="emoji" src="media/emoji/k_set.png" alt="">Setler ve vitrin</span>
+      <h2>Albümleri tamamla, en iyilerini sergile</h2>
+      <p>Katalogda en az 3 şarkısı olan her albüm bir settir. Hepsini toplayınca şarkı başına <b>30 Plak</b> ödül ve kalıcı bir rozet alırsın; ilerlemen <code>/setler</code>'de. Set sonradan büyürse yeni şarkılarla yeniden tamamlayabilirsin.</p>
+      <p>Profil kartındaki <b>vitrinde 3 yuva</b> var: <code>/kart vitrin</code> ile en sevdiğin kartları koy. Boş bıraktığın yuvalar en değerli kartlarınla dolar.</p>
+    </div>
+    <img class="shot" src="media/ornek_vitrin.png" alt="Örnek vitrin: Efsanevi, Epik ve Nadir üç kart" width="800" height="320" loading="lazy">
+  </div>
+
+  <div class="feature flip" id="profil">
+    <div class="feature-text">
+      <span class="tag"><img class="emoji" src="media/emoji/k_goster.png" alt="">Profil kartı</span>
+      <h2>Sana ait bir kart</h2>
+      <p><code>/profil</code> seviyeni, XP çubuğunu, serini, biyografini, kart ve set sayını ve kademelere göre koleksiyonunu tek görselde gösterir. Arka planı vitrindeki ilk kartının kapağından gelir.</p>
+      <ul>
+        <li><code>/biyografi</code> ile en fazla 100 karakterlik bir söz ekle.</li>
+        <li><b>Müzik zevki:</b> en çok dinlediğin 3 sanatçı profilinde görünür. Varsayılan kapalıdır; <code>/gizlilik müzik-zevki</code> ile açarsın.</li>
+        <li>Sohbet ettikçe ve dinledikçe XP kazanırsın; seviye atladığında kısa bir kutlama kartı gelir.</li>
+      </ul>
+    </div>
+    <div class="stack">
+      <img class="shot" src="media/ornek_profil.png" alt="Örnek profil kartı: seviye, seri, kart sayıları, müzik zevki ve vitrin" width="1200" height="500" loading="lazy">
+      <img class="shot" src="media/ornek_seviye.png" alt="Örnek seviye atlama kartı" width="800" height="150" loading="lazy">
+    </div>
+  </div>
+
+  <div class="feature" id="kendi">
+    <div class="feature-text">
+      <span class="tag"><img class="emoji" src="media/emoji/k_dinle.png" alt="">Kendi dinlediklerin</span>
+      <h2>Kutudan kendi şarkıların çıkar</h2>
+      <p>Kutudaki kartın yaklaşık <b>%25</b>'i senin bu sunucuda dinlediğin ve henüz sahip olmadığın şarkılardan, <b>%50</b>'si sunucunun havuzundan, <b>%25</b>'i diğer sunuculardan gelir.</p>
+      <p>Kendi payın, dinlediğin şarkılar 40 karta ulaşana kadar yavaş yavaş büyür. Bunun için oyuna <code>/başla</code> ile katılmış ve takibi açık olmalısın; <code>/oranlar</code> kendi payının şu anki durumunu gösterir.</p>
+      <p>Bir şarkıyı sunucuda ilk dinleyen sen olursan kartında "Keşfeden" olarak adın yazar.</p>
+    </div>
+    <img class="shot" src="media/ornek_kesfeden.png" alt="Örnek kart: şarkı, sanatçı, albüm ve keşfeden oyuncu" width="800" height="300" loading="lazy">
+  </div>
+
+  <div class="feature flip" id="rastgele">
+    <div class="feature-text">
+      <span class="tag"><img class="emoji" src="media/emoji/k_nota.png" alt=""><code>/rastgele</code></span>
+      <h2>Sunucunun keşifleri</h2>
+      <p>Sunucunda keşfedilmiş rastgele bir şarkı önerir: şarkı, sanatçı, albüm, kademe ve onu kimin keşfettiği. Oyuna katılmayan üyelerin dinlediği şarkılar isimsiz görünür.</p>
+      <p>Nadir ve üstü şarkılar <b>hareketli</b> gelir: kademe renginde parıltı ya da yıldızlar.</p>
+    </div>
+    <div class="stack">
+      <img class="shot" src="media/ornek_rastgele.gif" alt="Hareketli örnek /rastgele kartı, Efsanevi kademede parıltılı çerçeve" width="800" height="300" loading="lazy">
+      <img class="shot" src="media/ornek_rastgele_nadir.gif" alt="Hareketli örnek /rastgele kartı, Nadir kademede yıldızlar" width="800" height="300" loading="lazy">
+    </div>
+  </div>
+
+  <div class="feature" id="uretim">
+    <div class="feature-text">
+      <span class="tag"><img class="emoji" src="media/emoji/k_parca.png" alt="">Parçalama ve üretim</span>
+      <h2>Kopyalar boşa gitmez</h2>
+      <p>Her kutu, içinden ne çıkarsa çıksın ayrıca <b>3 Parça</b> verir. Zaten sahip olduğun bir kart çıkarsa kopya otomatik olarak Parça'ya dönüşür.</p>
+      <p><code>/kart parçala</code> istemediğin bir kartı Parça'ya çevirir (Epik ve üstünde onay ister). <code>/kart üret</code> ile Parça harcayıp eksik kartını kendin üretirsin: üyesi olduğun sunucuların havuzundaki ya da kendi dinlediğin şarkılardan. Efsanevi üretmek için profilinin en az 14 günlük olması gerekir.</p>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Parça</th><th>Yaygın</th><th>Nadir</th><th>Epik</th><th>Efsanevi</th></tr></thead>
+        <tbody>
+          <tr><td><b>Kopya kart</b></td><td>+5</td><td>+15</td><td>+50</td><td>+150</td></tr>
+          <tr><td><b>Parçalama</b></td><td>+2</td><td>+7</td><td>+25</td><td>+75</td></tr>
+          <tr><td><b>Üretim</b></td><td>−30</td><td>−90</td><td>−300</td><td>−900</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<section class="alt cta">
+  <div class="wrap">
+    <h2>Denemeye hazır mısın?</h2>
+    <p class="intro">Tüm komutlar <a href="komutlar.html">Komutlar</a> sayfasında, terimler <a href="rehber.html">Rehber</a>'de.</p>
+    <div class="buttons">
+      <a class="btn btn-primary" href="https://discord.com/oauth2/authorize?client_id=1452711910930907346&amp;permissions=274877959168&amp;integration_type=0&amp;scope=bot+applications.commands">Discord'a Ekle</a>
+      <a class="btn btn-secondary" href="https://discord.gg/R9tBdnKaH6">Destek Sunucusu</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <nav>
+      <a href="gizlilik.html">Gizlilik Politikası</a>
+      <a href="kosullar.html">Kullanım Koşulları</a>
+      <a href="https://top.gg/bot/1452711910930907346">top.gg</a>
+      <a href="https://discord.gg/R9tBdnKaH6">Destek Sunucusu</a>
+    </nav>
+    <span>Kanade, Discord veya Spotify ile bağlantılı değildir.</span>
+  </div>
+</footer>
+</body>
+</html>

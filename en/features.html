@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Features · Kanade</title>
+<meta name="description" content="Kanade is a Discord game that turns the songs you play on Spotify into collectible cards. Listen, open boxes, show off your collection.">
+<meta name="theme-color" content="#140F26">
+<meta property="og:title" content="Features · Kanade">
+<meta property="og:description" content="Kanade is a Discord game that turns the songs you play on Spotify into collectible cards. Listen, open boxes, show off your collection.">
+<meta property="og:url" content="https://kanadebot.github.io/en/features.html">
+<meta property="og:image" content="https://kanadebot.github.io/media/banner.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../favicon.png" type="image/png">
+<link rel="canonical" href="https://kanadebot.github.io/en/features.html">
+<link rel="alternate" hreflang="en" href="https://kanadebot.github.io/en/features.html">
+<link rel="alternate" hreflang="tr" href="https://kanadebot.github.io/ozellikler.html">
+<link rel="preload" href="../fonts/NotoSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body class="page-features">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="../en/index.html"><img src="../media/logo.png" alt="" width="34" height="34">Kanade</a>
+    <nav class="mainnav" aria-label="Site menu">
+    <a href="../en/index.html">Home</a>
+    <a href="../en/features.html" aria-current="page">Features</a>
+    <a href="../en/commands.html">Commands</a>
+    <a href="../en/guide.html">Guide</a>
+    <a href="../en/faq.html">FAQ</a>
+    <a href="../en/updates.html">Updates</a>
+    </nav>
+    <a class="lang" href="../ozellikler.html" hreflang="tr" lang="tr">Türkçe</a>
+  </div>
+</header>
+<main id="main">
+<div class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">Features</p>
+    <h1>Your music taste, card by card</h1>
+    <p class="intro">Every card is a song, and its image is drawn by the bot on the spot. The examples below use colourful placeholders instead of album covers (and show the Turkish interface).</p>
+    <nav class="chips" aria-label="On this page">
+      <a href="#cards"><img class="emoji" src="../media/emoji/k_kart.png" alt="">Cards and tiers</a>
+      <a href="#sets"><img class="emoji" src="../media/emoji/k_set.png" alt="">Sets and showcase</a>
+      <a href="#profile"><img class="emoji" src="../media/emoji/k_goster.png" alt="">Profile card</a>
+      <a href="#own"><img class="emoji" src="../media/emoji/k_dinle.png" alt="">Your own listening</a>
+      <a href="#random"><img class="emoji" src="../media/emoji/k_nota.png" alt="">/random</a>
+      <a href="#crafting"><img class="emoji" src="../media/emoji/k_parca.png" alt="">Dismantling and crafting</a>
+    </nav>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="feature wide" id="cards">
+    <div class="feature-text">
+      <span class="tag"><img class="emoji" src="../media/emoji/k_kart.png" alt="">Cards and tiers</span>
+      <h2>Every song is a card</h2>
+      <p>Each card from a box is a song: cover, title, artist and album. A card's tier is set the moment it's minted and never changes.</p>
+      <ul>
+        <li><b>Edition no.:</b> which copy of that song you own. #1 is the first edition; the first 10 are marked "Early Edition". Numbers are never reused.</li>
+        <li><b>Discoverer:</b> the player who first played the song on your server appears on its card.</li>
+        <li><code>/card show</code> shares your card as an image in chat, <code>/card info</code> gives its edition, tier and set.</li>
+      </ul>
+    </div>
+    <div class="cards-row">
+      <img src="../media/ornek_kart_common.png" alt="Example Common card, edition #128" width="360" height="504" loading="lazy">
+      <img src="../media/ornek_kart_rare.png" alt="Example Rare card, edition #41" width="360" height="504" loading="lazy">
+      <img src="../media/ornek_kart_epic.png" alt="Example Epic card, edition #12" width="360" height="504" loading="lazy">
+      <img src="../media/ornek_kart_legendary.png" alt="Example Legendary card, edition #3, Early Edition" width="360" height="504" loading="lazy">
+    </div>
+  </div>
+
+  <div class="feature flip">
+    <div class="feature-text">
+      <span class="tag"><img class="emoji" src="../media/emoji/k_yildiz.png" alt="">Tiers</span>
+      <h2>Four tiers, public odds</h2>
+      <p>Every box gives a Common, Rare, Epic or Legendary card. The odds and your personal counters are always listed in <code>/rates</code>.</p>
+      <p><b>Pity (guarantee):</b> bad luck doesn't last forever. An Epic or better is certain within 10 boxes in a row, a Legendary within 45.</p>
+      <p>A new player's first box is at least Rare, and every 7th day of your <code>/daily</code> streak brings an Epic+ guaranteed box.</p>
+    </div>
+    <div class="tiers">
+      <div class="tier t-common"><img src="../media/emoji/k_yaygin.png" alt="" width="48" height="48"><b>Common</b><span>62%</span></div>
+      <div class="tier t-rare"><img src="../media/emoji/k_nadir.png" alt="" width="48" height="48"><b>Rare</b><span>27%</span></div>
+      <div class="tier t-epic"><img src="../media/emoji/k_epik.png" alt="" width="48" height="48"><b>Epic</b><span>9%</span></div>
+      <div class="tier t-legendary"><img src="../media/emoji/k_efsanevi.png" alt="" width="48" height="48"><b>Legendary</b><span>2%</span></div>
+    </div>
+  </div>
+
+  <div class="feature" id="sets">
+    <div class="feature-text">
+      <span class="tag"><img class="emoji" src="../media/emoji/k_set.png" alt="">Sets and showcase</span>
+      <h2>Complete albums, show off your best</h2>
+      <p>Every album with at least 3 songs in the catalog is a set. Collect them all for <b>30 Vinyl</b> per song and a permanent badge; track your progress in <code>/sets</code>. If a set grows later you can complete it again with the new songs.</p>
+      <p>The <b>showcase on your profile card has 3 slots</b>: put your favourite cards there with <code>/card showcase</code>. Slots you leave empty fill up with your most valuable cards.</p>
+    </div>
+    <img class="shot" src="../media/ornek_vitrin.png" alt="Example showcase: Legendary, Epic and Rare cards" width="800" height="320" loading="lazy">
+  </div>
+
+  <div class="feature flip" id="profile">
+    <div class="feature-text">
+      <span class="tag"><img class="emoji" src="../media/emoji/k_goster.png" alt="">Profile card</span>
+      <h2>A card that's all yours</h2>
+      <p><code>/profile</code> shows your level, XP bar, streak, bio, card and set counts and your collection by tier in a single image. Its background comes from the cover of the first card in your showcase.</p>
+      <ul>
+        <li>Add a quote of up to 100 characters with <code>/bio</code>.</li>
+        <li><b>Music taste:</b> your 3 most-played artists appear on your profile. It's off by default; turn it on with <code>/privacy music-taste</code>.</li>
+        <li>You earn XP by chatting and listening; levelling up brings a short celebration card.</li>
+      </ul>
+    </div>
+    <div class="stack">
+      <img class="shot" src="../media/ornek_profil.png" alt="Example profile card: level, streak, card counts, music taste and showcase" width="1200" height="500" loading="lazy">
+      <img class="shot" src="../media/ornek_seviye.png" alt="Example level-up card" width="800" height="150" loading="lazy">
+    </div>
+  </div>
+
+  <div class="feature" id="own">
+    <div class="feature-text">
+      <span class="tag"><img class="emoji" src="../media/emoji/k_dinle.png" alt="">Your own listening</span>
+      <h2>Your songs come out of the box</h2>
+      <p>About <b>25%</b> of box cards come from songs you played on this server and don't own yet, <b>50%</b> from the server pool and <b>25%</b> from other servers.</p>
+      <p>Your own share grows gradually until the songs you played reach 40 cards. You need to have joined with <code>/start</code> and have tracking on; <code>/rates</code> shows where your own share stands.</p>
+      <p>Be the first on your server to play a song and your name appears on its card as the discoverer.</p>
+    </div>
+    <img class="shot" src="../media/ornek_kesfeden.png" alt="Example card: song, artist, album and the player who discovered it" width="800" height="300" loading="lazy">
+  </div>
+
+  <div class="feature flip" id="random">
+    <div class="feature-text">
+      <span class="tag"><img class="emoji" src="../media/emoji/k_nota.png" alt=""><code>/random</code></span>
+      <h2>Your server's discoveries</h2>
+      <p>Suggests a random song discovered on your server: song, artist, album, tier and who discovered it. Songs played by members who haven't joined the game appear anonymously.</p>
+      <p>Rare and higher songs come <b>animated</b>: a glow or stars in the tier colour.</p>
+    </div>
+    <div class="stack">
+      <img class="shot" src="../media/ornek_rastgele.gif" alt="Animated example /random card, Legendary tier with a glowing frame" width="800" height="300" loading="lazy">
+      <img class="shot" src="../media/ornek_rastgele_nadir.gif" alt="Animated example /random card, Rare tier with stars" width="800" height="300" loading="lazy">
+    </div>
+  </div>
+
+  <div class="feature" id="crafting">
+    <div class="feature-text">
+      <span class="tag"><img class="emoji" src="../media/emoji/k_parca.png" alt="">Dismantling and crafting</span>
+      <h2>Duplicates aren't wasted</h2>
+      <p>Every box gives an extra <b>3 Shards</b> no matter what's inside. If you get a card you already own, the duplicate turns into Shards automatically.</p>
+      <p><code>/card dismantle</code> turns a card you don't want into Shards (Epic and above ask for confirmation). With <code>/card craft</code> you spend Shards to make a missing card yourself: from the pools of servers you're in or from songs you played. Crafting a Legendary needs a profile at least 14 days old.</p>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Shards</th><th>Common</th><th>Rare</th><th>Epic</th><th>Legendary</th></tr></thead>
+        <tbody>
+          <tr><td><b>Duplicate</b></td><td>+5</td><td>+15</td><td>+50</td><td>+150</td></tr>
+          <tr><td><b>Dismantle</b></td><td>+2</td><td>+7</td><td>+25</td><td>+75</td></tr>
+          <tr><td><b>Craft</b></td><td>−30</td><td>−90</td><td>−300</td><td>−900</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<section class="alt cta">
+  <div class="wrap">
+    <h2>Ready to try it?</h2>
+    <p class="intro">Every command is on the <a href="../en/commands.html">Commands</a> page, every term in the <a href="../en/guide.html">Guide</a>.</p>
+    <div class="buttons">
+      <a class="btn btn-primary" href="https://discord.com/oauth2/authorize?client_id=1452711910930907346&amp;permissions=274877959168&amp;integration_type=0&amp;scope=bot+applications.commands">Add to Discord</a>
+      <a class="btn btn-secondary" href="https://discord.gg/R9tBdnKaH6">Support Server</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <nav>
+      <a href="../en/privacy.html">Privacy Policy</a>
+      <a href="../en/terms.html">Terms of Service</a>
+      <a href="https://top.gg/bot/1452711910930907346">top.gg</a>
+      <a href="https://discord.gg/R9tBdnKaH6">Support Server</a>
+    </nav>
+    <span>Kanade is not affiliated with Discord or Spotify.</span>
+  </div>
+</footer>
+</body>
+</html>

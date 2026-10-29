@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guide · Kanade</title>
+<meta name="description" content="Kanade is a Discord game that turns the songs you play on Spotify into collectible cards. Listen, open boxes, show off your collection.">
+<meta name="theme-color" content="#140F26">
+<meta property="og:title" content="Guide · Kanade">
+<meta property="og:description" content="Kanade is a Discord game that turns the songs you play on Spotify into collectible cards. Listen, open boxes, show off your collection.">
+<meta property="og:url" content="https://kanadebot.github.io/en/guide.html">
+<meta property="og:image" content="https://kanadebot.github.io/media/banner.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../favicon.png" type="image/png">
+<link rel="canonical" href="https://kanadebot.github.io/en/guide.html">
+<link rel="alternate" hreflang="en" href="https://kanadebot.github.io/en/guide.html">
+<link rel="alternate" hreflang="tr" href="https://kanadebot.github.io/rehber.html">
+<link rel="preload" href="../fonts/NotoSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body class="page-guide">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="../en/index.html"><img src="../media/logo.png" alt="" width="34" height="34">Kanade</a>
+    <nav class="mainnav" aria-label="Site menu">
+    <a href="../en/index.html">Home</a>
+    <a href="../en/features.html">Features</a>
+    <a href="../en/commands.html">Commands</a>
+    <a href="../en/guide.html" aria-current="page">Guide</a>
+    <a href="../en/faq.html">FAQ</a>
+    <a href="../en/updates.html">Updates</a>
+    </nav>
+    <a class="lang" href="../rehber.html" hreflang="tr" lang="tr">Türkçe</a>
+  </div>
+</header>
+<main id="main">
+<div class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">Guide</p>
+    <h1><img class="emoji" src="../media/emoji/k_rehber.png" alt="📖"> Guide: how to play</h1>
+    <p class="intro">How to play and terms: Vinyl, Shards, tiers, sets, streaks, pity.</p>
+  </div>
+</div>
+<div class="wrap guide">
+  <section>
+    <h2>Step by step</h2>
+    <ol class="how">
+      <li><strong>1. Listen:</strong> every song you play on Spotify (at least 30 s) earns <strong>3 Vinyl</strong> (up to 30 songs a day). Played songs join the server pool and become cards.</li>
+      <li><strong>2. Open boxes:</strong> <code>/box</code> = 100 Vinyl. Tier rates are always in <code>/rates</code>. The card comes ~25% from songs you played on this server and don't own yet, ~50% from the server pool, ~25% from other servers.</li>
+      <li><strong>3. Collect:</strong> duplicates turn into Shards; craft a missing card with <code>/card craft</code>. Turn a card you don't want into Shards with <code>/card dismantle</code>.</li>
+      <li><strong>4. Every day:</strong> <code>/daily</code> reward + 3 quests; finish all three for 1 free box.</li>
+    </ol>
+  </section>
+  <section>
+    <h2>Terms</h2>
+    <div class="terms">
+    <div class="term" id="plak">
+      <h3><img class="emoji" src="../media/emoji/k_plak.png" alt="💿"> Vinyl</h3>
+      <p>Game currency. Earned by listening (3/song), <code>/daily</code> (100+) and quests; opens boxes (100 Vinyl).</p>
+    </div>
+    <div class="term" id="shards">
+      <h3><img class="emoji" src="../media/emoji/k_parca.png" alt="🧩"> Shards</h3>
+      <p>+3 from every box; duplicates give Common 5 · Rare 15 · Epic 50 · Legendary 150. Crafting costs 30 / 90 / 300 / 900.</p>
+    </div>
+    <div class="term" id="tier">
+      <h3><img class="emoji" src="../media/emoji/k_yaygin.png" alt="⚪"><img class="emoji" src="../media/emoji/k_nadir.png" alt="🔵"><img class="emoji" src="../media/emoji/k_epik.png" alt="🟣"><img class="emoji" src="../media/emoji/k_efsanevi.png" alt="🟡"> Tier</h3>
+      <p>Common, Rare, Epic, Legendary. A card always keeps the tier it was minted with.</p>
+    </div>
+    <div class="term" id="edition">
+      <h3>#️⃣ Edition no.</h3>
+      <p>Which copy of that song you own (#1 = first edition). Numbers are never reused.</p>
+    </div>
+    <div class="term" id="set">
+      <h3><img class="emoji" src="../media/emoji/k_set.png" alt="💽"> Set</h3>
+      <p>At least 3 songs of one album in the catalog. Collect them all for 30 Vinyl per song; <code>/sets</code>.</p>
+    </div>
+    <div class="term" id="streak">
+      <h3><img class="emoji" src="../media/emoji/k_seri.png" alt="🔥"> Streak</h3>
+      <p>Claiming <code>/daily</code> on consecutive days. +10 Vinyl per day; every 7 days an Epic+ guaranteed box.</p>
+    </div>
+    <div class="term" id="pity">
+      <h3>🎯 Pity (guarantee)</h3>
+      <p>Bad-luck protection: Epic+ is certain within 10 boxes in a row, Legendary within 45.</p>
+    </div>
+    <div class="term" id="pool">
+      <h3><img class="emoji" src="../media/emoji/k_kutu.png" alt="📦"> Pool (own / server / global)</h3>
+      <p>Where a box picks its card: ~25% <strong>own</strong> (songs you played on this server and don't own yet), ~50% <strong>server</strong> (songs played on this server), ~25% <strong>global</strong> (other servers). While your own pool is small its share goes to the server; while the server pool is small its share goes to global.</p>
+    </div>
+    <div class="term" id="spotify">
+      <h3><img class="emoji" src="../media/emoji/k_dinle.png" alt="🎧"> Why is Spotify needed?</h3>
+      <p>The bot only sees Discord's "listening" status. If it's hidden you earn no Vinyl and the pool doesn't grow: Settings → Connections → Spotify → "Display as status".</p>
+    </div>
+    </div>
+    <p class="note">Numbers may change for balance; current rates are in /rates.</p>
+  </section>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <nav>
+      <a href="../en/privacy.html">Privacy Policy</a>
+      <a href="../en/terms.html">Terms of Service</a>
+      <a href="https://top.gg/bot/1452711910930907346">top.gg</a>
+      <a href="https://discord.gg/R9tBdnKaH6">Support Server</a>
+    </nav>
+    <span>Kanade is not affiliated with Discord or Spotify.</span>
+  </div>
+</footer>
+</body>
+</html>

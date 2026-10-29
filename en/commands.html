@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Commands · Kanade</title>
+<meta name="description" content="Kanade is a Discord game that turns the songs you play on Spotify into collectible cards. Listen, open boxes, show off your collection.">
+<meta name="theme-color" content="#140F26">
+<meta property="og:title" content="Commands · Kanade">
+<meta property="og:description" content="Kanade is a Discord game that turns the songs you play on Spotify into collectible cards. Listen, open boxes, show off your collection.">
+<meta property="og:url" content="https://kanadebot.github.io/en/commands.html">
+<meta property="og:image" content="https://kanadebot.github.io/media/banner.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../favicon.png" type="image/png">
+<link rel="canonical" href="https://kanadebot.github.io/en/commands.html">
+<link rel="alternate" hreflang="en" href="https://kanadebot.github.io/en/commands.html">
+<link rel="alternate" hreflang="tr" href="https://kanadebot.github.io/komutlar.html">
+<link rel="preload" href="../fonts/NotoSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body class="page-commands">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="../en/index.html"><img src="../media/logo.png" alt="" width="34" height="34">Kanade</a>
+    <nav class="mainnav" aria-label="Site menu">
+    <a href="../en/index.html">Home</a>
+    <a href="../en/features.html">Features</a>
+    <a href="../en/commands.html" aria-current="page">Commands</a>
+    <a href="../en/guide.html">Guide</a>
+    <a href="../en/faq.html">FAQ</a>
+    <a href="../en/updates.html">Updates</a>
+    </nav>
+    <a class="lang" href="../komutlar.html" hreflang="tr" lang="tr">Türkçe</a>
+  </div>
+</header>
+<main id="main">
+<div class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">Commands</p>
+    <h1>Every command</h1>
+    <p class="intro">This list is generated from the bot's own command definitions and changes with the bot. Commands also work with the <code>k!</code> prefix; on Discord <code>/help</code> shows the same list in a menu.</p>
+  </div>
+</div>
+<div class="wrap">
+  <p class="legend"><code>&lt;required&gt;</code> · <code>[optional]</code></p>
+  <nav class="chips" aria-label="Contents"><a href="#play">🎮 Play</a><a href="#cards"><img class="emoji" src="../media/emoji/k_kart.png" alt="🃏"> Cards &amp; Collection</a><a href="#social">🏆 Social</a><a href="#music"><img class="emoji" src="../media/emoji/k_nota.png" alt="🎵"> Music</a><a href="#settings">⚙️ Settings &amp; Privacy</a></nav>
+  <section class="cmd-group" id="play">
+    <h2>🎮 Play</h2>
+    <p class="intro">Start, open boxes, daily reward and quests.</p>
+    <ul class="command-list">
+      <li class="command">
+        <code class="usage">/start</code>
+        <p>Join the game, get your welcome gift and open your first box.</p>
+        <p class="prefix">With prefix: <code>k!start</code></p>
+      </li>
+      <li class="command">
+        <code class="usage">/box</code>
+        <p>Open a music box (streak box, free box or 100 Vinyl).</p>
+        <p class="prefix">With prefix: <code>k!box</code></p>
+      </li>
+      <li class="command">
+        <code class="usage">/rates</code>
+        <p>Show box rates, pity counters and your boxes.</p>
+        <p class="prefix">With prefix: <code>k!rates</code></p>
+      </li>
+      <li class="command">
+        <code class="usage">/daily</code>
+        <p>Your daily Vinyl reward, today's quests and your streak.</p>
+        <p class="prefix">With prefix: <code>k!daily</code></p>
+      </li>
+      <li class="command">
+        <code class="usage">/help</code>
+        <p>Show commands by category.</p>
+        <p class="prefix">With prefix: <code>k!help</code></p>
+      </li>
+    </ul>
+  </section>
+  <section class="cmd-group" id="cards">
+    <h2><img class="emoji" src="../media/emoji/k_kart.png" alt="🃏"> Cards &amp; Collection</h2>
+    <p class="intro">Show, inspect and craft cards; collection and sets.</p>
+    <ul class="command-list">
+      <li class="command">
+        <code class="usage">/collection [member] [rarity] [page]</code>
+        <p>Your card collection: filter by rarity, browse page by page.</p>
+        <p class="sub">Options</p>
+        <ul class="params"><li><code>member</code> Whose collection to show (empty: yours)</li><li><code>rarity</code> Only cards of this tier</li><li><code>page</code> Page to open</li></ul>
+        <p class="prefix">With prefix: <code>k!collection [member] [rarity] [page]</code></p>
+      </li>
+      <li class="command">
+        <code class="usage">/sets</code>
+        <p>Your progress on album sets.</p>
+        <p class="prefix">With prefix: <code>k!sets</code></p>
+      </li>
+      <li class="command">
+        <code class="usage">/card show &lt;card&gt;</code>
+        <p>Share one of your cards in the chat.</p>
+        <p class="sub">Options</p>
+        <ul class="params"><li><code>card</code> The card to show</li></ul>
+        <p class="prefix">With prefix: <code>k!card show &lt;card&gt;</code></p>
+      </li>
+      <li class="command">
+        <code class="usage">/card info &lt;card&gt;</code>
+        <p>Edition, tier and set details of a card.</p>
+        <p class="sub">Options</p>
+        <ul class="params"><li><code>card</code> The card to inspect</li></ul>
+        <p class="prefix">With prefix: <code>k!card info &lt;card&gt;</code></p>
+      </li>
+      <li class="command">
+        <code class="usage">/card craft &lt;card&gt;</code>
+        <p>Craft a card with Shards.</p>
+        <p class="sub">Options</p>
+        <ul class="params"><li><code>card</code> The card to craft</li></ul>
+        <p class="prefix">With prefix: <code>k!card craft &lt;card&gt;</code></p>
+      </li>
+      <li class="command">
+        <code class="usage">/card dismantle &lt;card&gt;</code>
+        <p>Turn a card you don't want into Shards (the card is removed).</p>
+        <p class="sub">Options</p>
+        <ul class="params"><li><code>card</code> Card to dismantle (name or artist)</li></ul>
+        <p class="prefix">With prefix: <code>k!card dismantle &lt;card&gt;</code></p>
+      </li>
+      <li class="command">
+        <code class="usage">/card showcase [slot] &lt;card&gt;</code>
+        <p>Puts one of your cards in the showcase on your profile card.</p>
+        <p class="sub">Options</p>
+        <ul class="params"><li><code>slot</code> Showcase slot 1-3 (leave empty for the first free slot)</li><li><code>card</code> Card to put in your showcase</li></ul>
+        <p class="prefix">With prefix: <code>k!card showcase [slot] &lt;card&gt;</code></p>
+      </li>
+    </ul>
+  </section>
+  <section class="cmd-group" id="social">
+    <h2>🏆 Social</h2>
+    <p class="intro">Server leaderboard, profile card and bio.</p>
+    <ul class="command-list">
+      <li class="command">
+        <code class="usage">/leaderboard [period]</code>
+        <p>This server's collection leaderboard (this week or all time).</p>
+        <p class="sub">Options</p>
+        <ul class="params"><li><code>period</code> This week or all time</li></ul>
+        <p class="prefix">With prefix: <code>k!leaderboard [period]</code></p>
+      </li>
+      <li class="command">
+        <code class="usage">/profile [member]</code>
+        <p>Show a profile card.</p>
+        <p class="sub">Options</p>
+        <ul class="params"><li><code>member</code> Whose profile to show (leave empty for yours).</li></ul>
+        <p class="prefix">With prefix: <code>k!profile [member]</code></p>
+      </li>
+      <li class="command">
+        <code class="usage">/bio &lt;text&gt;</code>
+        <p>Set the bio on your profile card.</p>
+        <p class="sub">Options</p>
+        <ul class="params"><li><code>text</code> Your new bio (max 100 characters).</li></ul>
+        <p class="prefix">With prefix: <code>k!bio &lt;text&gt;</code></p>
+      </li>
+    </ul>
+  </section>
+  <section class="cmd-group" id="music">
+    <h2><img class="emoji" src="../media/emoji/k_nota.png" alt="🎵"> Music</h2>
+    <p class="intro">Songs discovered on this server.</p>
+    <ul class="command-list">
+      <li class="command">
+        <code class="usage">/random</code>
+        <p>Suggest a random song discovered on this server.</p>
+        <p class="prefix">With prefix: <code>k!random</code></p>
+      </li>
+    </ul>
+  </section>
+  <section class="cmd-group" id="settings">
+    <h2>⚙️ Settings &amp; Privacy</h2>
+    <p class="intro">Your data and tracking choice; server settings (requires Manage Server) and bot status.</p>
+    <ul class="command-list">
+      <li class="command">
+        <code class="usage">/privacy status</code>
+        <p>Shows the data kept about you and your tracking status.</p>
+        <p class="prefix">With prefix: <code>k!privacy</code></p>
+      </li>
+      <li class="command">
+        <code class="usage">/privacy opt-out</code>
+        <p>Turns off tracking of your Spotify listening (on every server).</p>
+        <p class="prefix">With prefix: <code>k!privacy opt-out</code></p>
+      </li>
+      <li class="command">
+        <code class="usage">/privacy opt-in</code>
+        <p>Turns Spotify listening tracking back on.</p>
+        <p class="prefix">With prefix: <code>k!privacy opt-in</code></p>
+      </li>
+      <li class="command">
+        <code class="usage">/privacy music-taste &lt;state&gt;</code>
+        <p>Shows or hides your top 3 artists on your profile card.</p>
+        <p class="sub">Options</p>
+        <ul class="params"><li><code>state</code> On or off</li></ul>
+        <p class="prefix">With prefix: <code>k!privacy music-taste &lt;state&gt;</code></p>
+      </li>
+      <li class="command">
+        <code class="usage">/privacy delete-my-data</code>
+        <p>Permanently deletes all of your game data (asks for confirmation).</p>
+        <p class="prefix">With prefix: <code>k!privacy delete-my-data</code></p>
+      </li>
+      <li class="command">
+        <code class="usage">/settings show</code><span class="badge">Requires the Manage Server permission</span>
+        <p>Show the current server settings.</p>
+        <p class="prefix">With prefix: <code>k!settings</code></p>
+      </li>
+      <li class="command">
+        <code class="usage">/settings language &lt;language&gt;</code><span class="badge">Requires the Manage Server permission</span>
+        <p>Change the bot's language on this server.</p>
+        <p class="sub">Options</p>
+        <ul class="params"><li><code>language</code> New language</li></ul>
+        <p class="prefix">With prefix: <code>k!settings language &lt;language&gt;</code></p>
+      </li>
+      <li class="command">
+        <code class="usage">/settings tracking &lt;state&gt;</code><span class="badge">Requires the Manage Server permission</span>
+        <p>Turn Spotify listening tracking on or off.</p>
+        <p class="sub">Options</p>
+        <ul class="params"><li><code>state</code> On or off</li></ul>
+        <p class="prefix">With prefix: <code>k!settings tracking &lt;state&gt;</code></p>
+      </li>
+      <li class="command">
+        <code class="usage">/settings announce-channel [channel]</code><span class="badge">Requires the Manage Server permission</span>
+        <p>Set the channel for announcements such as level-ups.</p>
+        <p class="sub">Options</p>
+        <ul class="params"><li><code>channel</code> Announcement channel (empty: the channel where the message was sent)</li></ul>
+        <p class="prefix">With prefix: <code>k!settings announce-channel [channel]</code></p>
+      </li>
+      <li class="command">
+        <code class="usage">/ping</code>
+        <p>Show the bot's latency.</p>
+        <p class="prefix">With prefix: <code>k!ping</code></p>
+      </li>
+    </ul>
+  </section>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <nav>
+      <a href="../en/privacy.html">Privacy Policy</a>
+      <a href="../en/terms.html">Terms of Service</a>
+      <a href="https://top.gg/bot/1452711910930907346">top.gg</a>
+      <a href="https://discord.gg/R9tBdnKaH6">Support Server</a>
+    </nav>
+    <span>Kanade is not affiliated with Discord or Spotify.</span>
+  </div>
+</footer>
+</body>
+</html>

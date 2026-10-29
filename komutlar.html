@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Komutlar · Kanade</title>
+<meta name="description" content="Kanade, Spotify&#x27;da dinlediğin şarkıları koleksiyon kartlarına dönüştüren Türkçe Discord oyunu. Dinle, kutu aç, koleksiyonunu göster.">
+<meta name="theme-color" content="#140F26">
+<meta property="og:title" content="Komutlar · Kanade">
+<meta property="og:description" content="Kanade, Spotify&#x27;da dinlediğin şarkıları koleksiyon kartlarına dönüştüren Türkçe Discord oyunu. Dinle, kutu aç, koleksiyonunu göster.">
+<meta property="og:url" content="https://kanadebot.github.io/komutlar.html">
+<meta property="og:image" content="https://kanadebot.github.io/media/banner.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="canonical" href="https://kanadebot.github.io/komutlar.html">
+<link rel="alternate" hreflang="tr" href="https://kanadebot.github.io/komutlar.html">
+<link rel="alternate" hreflang="en" href="https://kanadebot.github.io/en/commands.html">
+<link rel="preload" href="fonts/NotoSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="page-commands">
+<a class="skip" href="#main">İçeriğe geç</a>
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="index.html"><img src="media/logo.png" alt="" width="34" height="34">Kanade</a>
+    <nav class="mainnav" aria-label="Site menüsü">
+    <a href="index.html">Ana sayfa</a>
+    <a href="ozellikler.html">Özellikler</a>
+    <a href="komutlar.html" aria-current="page">Komutlar</a>
+    <a href="rehber.html">Rehber</a>
+    <a href="sss.html">SSS</a>
+    <a href="guncellemeler.html">Güncellemeler</a>
+    </nav>
+    <a class="lang" href="en/commands.html" hreflang="en" lang="en">English</a>
+  </div>
+</header>
+<main id="main">
+<div class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">Komutlar</p>
+    <h1>Tüm komutlar</h1>
+    <p class="intro">Bu liste botun kendi komut tanımlarından üretilir, bot güncellendikçe değişir. Komutlar <code>k!</code> ön ekiyle de çalışır; Discord'da <code>/yardım</code> aynı listeyi menüyle gösterir.</p>
+  </div>
+</div>
+<div class="wrap">
+  <p class="legend"><code>&lt;zorunlu&gt;</code> · <code>[isteğe bağlı]</code></p>
+  <nav class="chips" aria-label="İçindekiler"><a href="#play">🎮 Oyna</a><a href="#cards"><img class="emoji" src="media/emoji/k_kart.png" alt="🃏"> Kartlar ve Koleksiyon</a><a href="#social">🏆 Sosyal</a><a href="#music"><img class="emoji" src="media/emoji/k_nota.png" alt="🎵"> Müzik</a><a href="#settings">⚙️ Ayarlar ve Gizlilik</a></nav>
+  <section class="cmd-group" id="play">
+    <h2>🎮 Oyna</h2>
+    <p class="intro">Başla, kutu aç, günlük ödül ve görevler.</p>
+    <ul class="command-list">
+      <li class="command">
+        <code class="usage">/başla</code>
+        <p>Oyuna katıl, hoş geldin hediyeni al ve ilk kutunu aç.</p>
+        <p class="prefix">Ön ekle: <code>k!başla</code></p>
+      </li>
+      <li class="command">
+        <code class="usage">/kutu</code>
+        <p>Bir müzik kutusu açar (seri kutusu, bedava kutu ya da 100 Plak).</p>
+        <p class="prefix">Ön ekle: <code>k!kutu</code></p>
+      </li>
+      <li class="command">
+        <code class="usage">/oranlar</code>
+        <p>Kutu oranlarını, pity sayaçlarını ve kutu haklarını gösterir.</p>
+        <p class="prefix">Ön ekle: <code>k!oranlar</code></p>
+      </li>
+      <li class="command">
+        <code class="usage">/günlük</code>
+        <p>Günlük Plak ödülün, bugünün görevleri ve serin.</p>
+        <p class="prefix">Ön ekle: <code>k!günlük</code></p>
+      </li>
+      <li class="command">
+        <code class="usage">/yardım</code>
+        <p>Komutları kategorilere göre gösterir.</p>
+        <p class="prefix">Ön ekle: <code>k!yardım</code></p>
+      </li>
+    </ul>
+  </section>
+  <section class="cmd-group" id="cards">
+    <h2><img class="emoji" src="media/emoji/k_kart.png" alt="🃏"> Kartlar ve Koleksiyon</h2>
+    <p class="intro">Kartlarını göster, incele, üret; koleksiyon ve setler.</p>
+    <ul class="command-list">
+      <li class="command">
+        <code class="usage">/koleksiyon [üye] [nadirlik] [sayfa]</code>
+        <p>Kart koleksiyonun: nadirliğe göre süz, sayfa sayfa gez.</p>
+        <p class="sub">Seçenekler</p>
+        <ul class="params"><li><code>üye</code> Koleksiyonu gösterilecek üye (boş: sen)</li><li><code>nadirlik</code> Yalnızca bu kademedeki kartlar</li><li><code>sayfa</code> Gidilecek sayfa</li></ul>
+        <p class="prefix">Ön ekle: <code>k!koleksiyon [üye] [nadirlik] [sayfa]</code></p>
+      </li>
+      <li class="command">
+        <code class="usage">/setler</code>
+        <p>Albüm setlerindeki ilerlemen.</p>
+        <p class="prefix">Ön ekle: <code>k!setler</code></p>
+      </li>
+      <li class="command">
+        <code class="usage">/kart göster &lt;kart&gt;</code>
+        <p>Bir kartını sohbette paylaşır.</p>
+        <p class="sub">Seçenekler</p>
+        <ul class="params"><li><code>kart</code> Göstermek istediğin kart</li></ul>
+        <p class="prefix">Ön ekle: <code>k!kart göster &lt;kart&gt;</code></p>
+      </li>
+      <li class="command">
+        <code class="usage">/kart bilgi &lt;kart&gt;</code>
+        <p>Bir kartın basım, kademe ve set bilgileri.</p>
+        <p class="sub">Seçenekler</p>
+        <ul class="params"><li><code>kart</code> İncelemek istediğin kart</li></ul>
+        <p class="prefix">Ön ekle: <code>k!kart bilgi &lt;kart&gt;</code></p>
+      </li>
+      <li class="command">
+        <code class="usage">/kart üret &lt;kart&gt;</code>
+        <p>Parça harcayarak bir kart üretir.</p>
+        <p class="sub">Seçenekler</p>
+        <ul class="params"><li><code>kart</code> Üretmek istediğin kart</li></ul>
+        <p class="prefix">Ön ekle: <code>k!kart üret &lt;kart&gt;</code></p>
+      </li>
+      <li class="command">
+        <code class="usage">/kart parçala &lt;kart&gt;</code>
+        <p>İstemediğin bir kartı Parça'ya dönüştürür (kart silinir).</p>
+        <p class="sub">Seçenekler</p>
+        <ul class="params"><li><code>kart</code> Parçalanacak kartın (adı ya da sanatçısı)</li></ul>
+        <p class="prefix">Ön ekle: <code>k!kart parçala &lt;kart&gt;</code></p>
+      </li>
+      <li class="command">
+        <code class="usage">/kart vitrin [sıra] &lt;kart&gt;</code>
+        <p>Bir kartını profil kartındaki vitrine koyar.</p>
+        <p class="sub">Seçenekler</p>
+        <ul class="params"><li><code>sıra</code> Vitrin yuvası 1-3 (boş bırakırsan ilk boş yuva)</li><li><code>kart</code> Vitrine koyacağın kart</li></ul>
+        <p class="prefix">Ön ekle: <code>k!kart vitrin [sıra] &lt;kart&gt;</code></p>
+      </li>
+    </ul>
+  </section>
+  <section class="cmd-group" id="social">
+    <h2>🏆 Sosyal</h2>
+    <p class="intro">Sunucu sıralaması, profil kartı ve biyografi.</p>
+    <ul class="command-list">
+      <li class="command">
+        <code class="usage">/sıralama [dönem]</code>
+        <p>Sunucunun koleksiyon sıralaması (bu hafta veya tüm zamanlar).</p>
+        <p class="sub">Seçenekler</p>
+        <ul class="params"><li><code>dönem</code> Bu hafta veya tüm zamanlar</li></ul>
+        <p class="prefix">Ön ekle: <code>k!sıralama [dönem]</code></p>
+      </li>
+      <li class="command">
+        <code class="usage">/profil [üye]</code>
+        <p>Profil kartını gösterir.</p>
+        <p class="sub">Seçenekler</p>
+        <ul class="params"><li><code>üye</code> Profili gösterilecek üye (boş bırakırsan sen).</li></ul>
+        <p class="prefix">Ön ekle: <code>k!profil [üye]</code></p>
+      </li>
+      <li class="command">
+        <code class="usage">/biyografi &lt;metin&gt;</code>
+        <p>Profil kartındaki biyografini ayarlar.</p>
+        <p class="sub">Seçenekler</p>
+        <ul class="params"><li><code>metin</code> Yeni biyografin (en fazla 100 karakter).</li></ul>
+        <p class="prefix">Ön ekle: <code>k!biyografi &lt;metin&gt;</code></p>
+      </li>
+    </ul>
+  </section>
+  <section class="cmd-group" id="music">
+    <h2><img class="emoji" src="media/emoji/k_nota.png" alt="🎵"> Müzik</h2>
+    <p class="intro">Sunucuda keşfedilen şarkılar.</p>
+    <ul class="command-list">
+      <li class="command">
+        <code class="usage">/rastgele</code>
+        <p>Bu sunucuda keşfedilen rastgele bir şarkı önerir.</p>
+        <p class="prefix">Ön ekle: <code>k!rastgele</code></p>
+      </li>
+    </ul>
+  </section>
+  <section class="cmd-group" id="settings">
+    <h2>⚙️ Ayarlar ve Gizlilik</h2>
+    <p class="intro">Verilerin ve takip tercihin; sunucu ayarları (Sunucuyu Yönet yetkisi gerekir) ve bot durumu.</p>
+    <ul class="command-list">
+      <li class="command">
+        <code class="usage">/gizlilik durum</code>
+        <p>Hakkında tutulan verileri ve takip durumunu gösterir.</p>
+        <p class="prefix">Ön ekle: <code>k!gizlilik</code></p>
+      </li>
+      <li class="command">
+        <code class="usage">/gizlilik takibi-kapat</code>
+        <p>Spotify dinlemelerinin takibini kapatır (hiçbir sunucuda).</p>
+        <p class="prefix">Ön ekle: <code>k!gizlilik takibi-kapat</code></p>
+      </li>
+      <li class="command">
+        <code class="usage">/gizlilik takibi-aç</code>
+        <p>Spotify dinleme takibini yeniden açar.</p>
+        <p class="prefix">Ön ekle: <code>k!gizlilik takibi-aç</code></p>
+      </li>
+      <li class="command">
+        <code class="usage">/gizlilik müzik-zevki &lt;durum&gt;</code>
+        <p>Profilinde en çok dinlediğin 3 sanatçının görünmesini açar veya kapatır.</p>
+        <p class="sub">Seçenekler</p>
+        <ul class="params"><li><code>durum</code> Açık veya kapalı</li></ul>
+        <p class="prefix">Ön ekle: <code>k!gizlilik müzik-zevki &lt;durum&gt;</code></p>
+      </li>
+      <li class="command">
+        <code class="usage">/gizlilik verilerimi-sil</code>
+        <p>Oyun verilerinin tamamını kalıcı olarak siler (onay ister).</p>
+        <p class="prefix">Ön ekle: <code>k!gizlilik verilerimi-sil</code></p>
+      </li>
+      <li class="command">
+        <code class="usage">/ayarlar göster</code><span class="badge">Sunucuyu Yönet yetkisi gerekir</span>
+        <p>Mevcut sunucu ayarlarını gösterir.</p>
+        <p class="prefix">Ön ekle: <code>k!ayarlar</code></p>
+      </li>
+      <li class="command">
+        <code class="usage">/ayarlar dil &lt;dil&gt;</code><span class="badge">Sunucuyu Yönet yetkisi gerekir</span>
+        <p>Botun bu sunucudaki dilini değiştirir.</p>
+        <p class="sub">Seçenekler</p>
+        <ul class="params"><li><code>dil</code> Yeni dil</li></ul>
+        <p class="prefix">Ön ekle: <code>k!ayarlar dil &lt;dil&gt;</code></p>
+      </li>
+      <li class="command">
+        <code class="usage">/ayarlar takip &lt;durum&gt;</code><span class="badge">Sunucuyu Yönet yetkisi gerekir</span>
+        <p>Spotify dinleme takibini açar veya kapatır.</p>
+        <p class="sub">Seçenekler</p>
+        <ul class="params"><li><code>durum</code> Açık veya kapalı</li></ul>
+        <p class="prefix">Ön ekle: <code>k!ayarlar takip &lt;durum&gt;</code></p>
+      </li>
+      <li class="command">
+        <code class="usage">/ayarlar duyuru-kanalı [kanal]</code><span class="badge">Sunucuyu Yönet yetkisi gerekir</span>
+        <p>Seviye atlama gibi duyuruların gönderileceği kanalı ayarlar.</p>
+        <p class="sub">Seçenekler</p>
+        <ul class="params"><li><code>kanal</code> Duyuru kanalı (boş bırakırsan mesajın yazıldığı kanal)</li></ul>
+        <p class="prefix">Ön ekle: <code>k!ayarlar duyuru-kanalı [kanal]</code></p>
+      </li>
+      <li class="command">
+        <code class="usage">/ping</code>
+        <p>Botun gecikmesini gösterir.</p>
+        <p class="prefix">Ön ekle: <code>k!ping</code></p>
+      </li>
+    </ul>
+  </section>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <nav>
+      <a href="gizlilik.html">Gizlilik Politikası</a>
+      <a href="kosullar.html">Kullanım Koşulları</a>
+      <a href="https://top.gg/bot/1452711910930907346">top.gg</a>
+      <a href="https://discord.gg/R9tBdnKaH6">Destek Sunucusu</a>
+    </nav>
+    <span>Kanade, Discord veya Spotify ile bağlantılı değildir.</span>
+  </div>
+</footer>
+</body>
+</html>
