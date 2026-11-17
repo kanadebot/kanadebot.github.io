@@ -115,7 +115,7 @@
         <code class="usage">/kart üret &lt;kart&gt;</code>
         <p>Parça harcayarak bir kart üretir.</p>
         <p class="sub">Seçenekler</p>
-        <ul class="params"><li><code>kart</code> Üretmek istediğin kart</li></ul>
+        <ul class="params"><li><code>kart</code> Bu sunucunun havuzundan ya da kendi dinlediklerinden, sende olmayan bir şarkı</li></ul>
         <p class="prefix">Ön ekle: <code>k!kart üret &lt;kart&gt;</code></p>
       </li>
       <li class="command">
@@ -124,6 +124,27 @@
         <p class="sub">Seçenekler</p>
         <ul class="params"><li><code>kart</code> Parçalanacak kartın (adı ya da sanatçısı)</li></ul>
         <p class="prefix">Ön ekle: <code>k!kart parçala &lt;kart&gt;</code></p>
+      </li>
+      <li class="command">
+        <code class="usage">/kart toplu-parçala &lt;nadirlik&gt;</code>
+        <p>Bir nadirlikteki kartlarını topluca Parça'ya çevirir (önce onay; kilitliler korunur).</p>
+        <p class="sub">Seçenekler</p>
+        <ul class="params"><li><code>nadirlik</code> Hangi nadirlik (Efsanevi toplu parçalanmaz)</li></ul>
+        <p class="prefix">Ön ekle: <code>k!kart toplu-parçala &lt;nadirlik&gt;</code></p>
+      </li>
+      <li class="command">
+        <code class="usage">/kart kilitle &lt;kart&gt;</code>
+        <p>Bir kartını kilitler: kilitli kart tek tek ya da toplu parçalanamaz.</p>
+        <p class="sub">Seçenekler</p>
+        <ul class="params"><li><code>kart</code> Kilitlenecek kart</li></ul>
+        <p class="prefix">Ön ekle: <code>k!kart kilitle &lt;kart&gt;</code></p>
+      </li>
+      <li class="command">
+        <code class="usage">/kart kilidi-aç &lt;kart&gt;</code>
+        <p>Bir kartının kilidini açar (yeniden parçalanabilir olur).</p>
+        <p class="sub">Seçenekler</p>
+        <ul class="params"><li><code>kart</code> Kilidi açılacak kart</li></ul>
+        <p class="prefix">Ön ekle: <code>k!kart kilidi-aç &lt;kart&gt;</code></p>
       </li>
       <li class="command">
         <code class="usage">/kart vitrin [sıra] &lt;kart&gt;</code>
@@ -174,8 +195,13 @@
   </section>
   <section class="cmd-group" id="settings">
     <h2>⚙️ Ayarlar ve Gizlilik</h2>
-    <p class="intro">Verilerin ve takip tercihin; sunucu ayarları (Sunucuyu Yönet yetkisi gerekir) ve bot durumu.</p>
+    <p class="intro">Kişisel tercihlerin (hatırlatma, animasyon), verilerin ve takip tercihin; sunucu ayarları (Sunucuyu Yönet yetkisi gerekir) ve bot durumu.</p>
     <ul class="command-list">
+      <li class="command">
+        <code class="usage">/tercihler</code>
+        <p>Kişisel ayarların: günlük ödül hatırlatması (DM) ve kutu açılış animasyonu.</p>
+        <p class="prefix">Ön ekle: <code>k!tercihler</code></p>
+      </li>
       <li class="command">
         <code class="usage">/gizlilik durum</code>
         <p>Hakkında tutulan verileri ve takip durumunu gösterir.</p>

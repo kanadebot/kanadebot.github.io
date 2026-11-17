@@ -115,7 +115,7 @@
         <code class="usage">/card craft &lt;card&gt;</code>
         <p>Craft a card with Shards.</p>
         <p class="sub">Options</p>
-        <ul class="params"><li><code>card</code> The card to craft</li></ul>
+        <ul class="params"><li><code>card</code> A song you don't own, from this server's pool or your own listens</li></ul>
         <p class="prefix">With prefix: <code>k!card craft &lt;card&gt;</code></p>
       </li>
       <li class="command">
@@ -124,6 +124,27 @@
         <p class="sub">Options</p>
         <ul class="params"><li><code>card</code> Card to dismantle (name or artist)</li></ul>
         <p class="prefix">With prefix: <code>k!card dismantle &lt;card&gt;</code></p>
+      </li>
+      <li class="command">
+        <code class="usage">/card bulk-dismantle &lt;rarity&gt;</code>
+        <p>Turn all your cards of one rarity into Shards (asks first; locked cards are kept).</p>
+        <p class="sub">Options</p>
+        <ul class="params"><li><code>rarity</code> Which rarity (Legendary can't be bulk dismantled)</li></ul>
+        <p class="prefix">With prefix: <code>k!card bulk-dismantle &lt;rarity&gt;</code></p>
+      </li>
+      <li class="command">
+        <code class="usage">/card lock &lt;card&gt;</code>
+        <p>Lock a card: a locked card can't be dismantled, one by one or in bulk.</p>
+        <p class="sub">Options</p>
+        <ul class="params"><li><code>card</code> Card to lock</li></ul>
+        <p class="prefix">With prefix: <code>k!card lock &lt;card&gt;</code></p>
+      </li>
+      <li class="command">
+        <code class="usage">/card unlock &lt;card&gt;</code>
+        <p>Unlock a card (it can be dismantled again).</p>
+        <p class="sub">Options</p>
+        <ul class="params"><li><code>card</code> Card to unlock</li></ul>
+        <p class="prefix">With prefix: <code>k!card unlock &lt;card&gt;</code></p>
       </li>
       <li class="command">
         <code class="usage">/card showcase [slot] &lt;card&gt;</code>
@@ -174,8 +195,13 @@
   </section>
   <section class="cmd-group" id="settings">
     <h2>⚙️ Settings &amp; Privacy</h2>
-    <p class="intro">Your data and tracking choice; server settings (requires Manage Server) and bot status.</p>
+    <p class="intro">Your personal preferences (reminder, animation), your data and tracking choice; server settings (requires Manage Server) and bot status.</p>
     <ul class="command-list">
+      <li class="command">
+        <code class="usage">/preferences</code>
+        <p>Your personal settings: daily reward reminder (DM) and box opening animation.</p>
+        <p class="prefix">With prefix: <code>k!preferences</code></p>
+      </li>
       <li class="command">
         <code class="usage">/privacy status</code>
         <p>Shows the data kept about you and your tracking status.</p>
